@@ -6,32 +6,32 @@
     <hr>
     <ul class="nav nav-pills flex-column mb-auto">
       <li class="nav-item">
-        <a href="#" class="nav-link" [ngClass]="{'active': selectedMenu == 'home'}" aria-current="page" (click)="selectMenu('home')">
+        <a [routerLink]="['/home']" routerLinkActive="router-link-active"  class="nav-link text-white" [ngClass]="{'active': selectedMenu == 'home'}" aria-current="page" (click)="selectMenu('home')">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
           Home
         </a>
         
       </li>
       <li>
-        <a href="#" class="nav-link text-white" [ngClass]="{'active': selectedMenu == 'dashboard'}" (click)="selectMenu('dashboard')">
+        <a [routerLink]="['/dashboard']" class="nav-link text-white" [ngClass]="{'active': selectedMenu == 'dashboard'}" (click)="selectMenu('dashboard')">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
           Dashboard
         </a>
       </li>
       <li>
-        <a href="#" class="nav-link text-white" [ngClass]="{'active': selectedMenu == 'orders'}" (click)="selectMenu('orders')">
+        <a [routerLink]="['/orders']" class="nav-link text-white" [ngClass]="{'active': selectedMenu == 'orders'}" (click)="selectMenu('orders')">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
           Orders
         </a>
       </li>
       <li>
-        <a href="#" class="nav-link text-white" [ngClass]="{'active': selectedMenu == 'products'}" (click)="selectMenu('products')">
+        <a [routerLink]="['/products']" class="nav-link text-white" [ngClass]="{'active': selectedMenu == 'products'}" (click)="selectMenu('products')">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
           Products
         </a>
       </li>
       <li>
-        <a href="#" class="nav-link text-white" [ngClass]="{'active': selectedMenu == 'customers'}" (click)="selectMenu('customers')">
+        <a [routerLink]="['/customers']" class="nav-link text-white" [ngClass]="{'active': selectedMenu == 'customers'}" (click)="selectMenu('customers')">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
           Customers
         </a>
